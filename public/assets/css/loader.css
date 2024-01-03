@@ -1,0 +1,175 @@
+/*DESTROY*/
+
+.lds-hourglass-destroy {
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px
+}
+
+.lds-hourglass-destroy:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: -10px;
+    box-sizing: border-box;
+    border: 10px solid #009688;
+    border-color: #009688 transparent #009688 transparent;
+    animation: lds-hourglass-destroy 1.2s infinite
+}
+
+@keyframes lds-hourglass-destroy {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+    100% {
+        transform: rotate(1800deg)
+    }
+}
+
+/*DESTROY*/
+
+/*STATUS*/
+.lds-hourglass-status {
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px
+}
+
+.lds-hourglass-status:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: -10px;
+    box-sizing: border-box;
+    border: 10px solid #009688;
+    border-color: #009688 transparent #009688 transparent;
+    animation: lds-hourglass-status 1.2s infinite
+}
+
+@keyframes lds-hourglass-status {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+    100% {
+        transform: rotate(1800deg)
+    }
+}
+/*STATUS*/
+
+.lds-hourglass-restore {
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px
+}
+
+.lds-hourglass-restore:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: -10px;
+    box-sizing: border-box;
+    border: 10px solid #009688;
+    border-color: #009688 transparent #009688 transparent;
+    animation: lds-hourglass-restore 1.2s infinite
+}
+
+@keyframes lds-hourglass-restore {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+    100% {
+        transform: rotate(1800deg)
+    }
+}
+
+.lds-hourglass-edit {
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px
+}
+
+.lds-hourglass-edit:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: -10px;
+    box-sizing: border-box;
+    border: 10px solid #ffa000;
+    border-color: #ffa000 transparent #ffa000 transparent;
+    animation: lds-hourglass-edit 1.2s infinite
+}
+
+@keyframes lds-hourglass-edit {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+    100% {
+        transform: rotate(1800deg)
+    }
+}
+
+.lds-hourglass-form {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px
+}
+
+.lds-hourglass-form:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 30px;
+    box-sizing: border-box;
+    border: 60px solid #4db6ac;
+    border-color: #4db6ac transparent #4db6ac transparent;
+    animation: lds-hourglass-form 1.2s infinite
+}
+
+@keyframes lds-hourglass-form {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+    100% {
+        transform: rotate(1800deg)
+    }
+}

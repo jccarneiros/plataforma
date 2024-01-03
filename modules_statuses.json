@@ -1,0 +1,12 @@
+{
+    "Administrators": true,
+    "Auth": true,
+    "Supervisor": true,
+    "Supervisores": true,
+    "Management": true,
+    "Coordinador": true,
+    "Secretariat": true,
+    "Teacher": true,
+    "Student": true,
+    "SchoolStudent": true
+}

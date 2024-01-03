@@ -1,0 +1,1 @@
+<iframe src="{{$item}}" width="100%"  style="border: none;height:100vh;"></iframe>

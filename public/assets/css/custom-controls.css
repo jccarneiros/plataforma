@@ -1,0 +1,109 @@
+.control-group{display:inline-block;vertical-align:top;background:#fff;text-align:left;box-shadow:0 1px 2px rgba(0,0,0,.1);padding:30px;width:200px;height:210px;margin:10px}.control{display:block;position:relative;padding-left:30px;margin-bottom:15px;cursor:pointer}.control input{position:absolute;z-index:-1;opacity:0}.control__indicator{position:absolute;top:-2px;left:0;height:20px;width:20px;background:#e6e6e6;border:1px solid #ccc}.control--radio .control__indicator{border-radius:50%}.control input:focus~.control__indicator,.control:hover input~.control__indicator{background:#ccc}.control input:checked~.control__indicator{background:#009688}.control input:checked:focus~.control__indicator,.control:hover input:not([disabled]):checked~.control__indicator{background:#0e647d}.control input:disabled~.control__indicator{background:#e6e6e6;opacity:.6;pointer-events:none}.control__indicator:after{content:'';position:absolute;display:none}.control input:checked~.control__indicator:after{display:block}.control--checkbox .control__indicator:after{left:8px;top:4px;width:3px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}.control--checkbox input:disabled~.control__indicator:after{border-color:#7b7b7b}.control--radio .control__indicator:after{left:6px;top:6px;height:6px;width:6px;border-radius:50%;background:#fff}.control--radio input:disabled~.control__indicator:after{background:#7b7b7b}.select{position:relative;display:inline-block;margin-bottom:15px;width:100%}.select select{display:inline-block;width:100%;cursor:pointer;padding:10px 15px;outline:0;border:0;border-radius:0;background:#e6e6e6;color:#7b7b7b;appearance:none;-webkit-appearance:none;-moz-appearance:none}.select select::-ms-expand{display:none}.select select:focus,.select select:hover{color:#000;background:#ccc}.select select:disabled{opacity:.5;pointer-events:none}.select__arrow{position:absolute;top:16px;right:15px;width:0;height:0;pointer-events:none;border-style:solid;border-width:8px 5px 0 5px;border-color:#7b7b7b transparent transparent transparent}.select select:focus~.select__arrow,.select select:hover~.select__arrow{border-top-color:#000}.select select:disabled~.select__arrow{border-top-color:#ccc}
+
+.wrapper .pass-field {
+    position: relative;
+}
+.pass-field input {
+    outline: none;
+    font-size: 1.0rem;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+.pass-field input:focus {
+    padding: 0 16px;
+    border: 2px solid #4285F4;
+}
+.pass-field i {
+    right: 5px;
+    top: 50%;
+    font-size: 1.0rem;
+    color: #999;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.wrapper .content {
+    margin: 0;
+}
+.content p {
+    color: #333;
+    font-size: 1.3rem;
+}
+.content .requirement-list {
+    margin-top: 2px;
+}
+.requirement-list li {
+    font-size: 0.8rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 2rem;
+}
+.requirement-list li i {
+    width: 1rem;
+    color: #aaa;
+    font-size: 0.6rem;
+}
+.requirement-list li.valid i {
+    font-size: 1.2rem;
+    color: #4285F4;
+}
+.requirement-list li span {
+    margin-left: 0;
+    color: #333;
+}
+.requirement-list li.valid span {
+    color: #999;
+}
+
+@media screen and (max-width: 500px) {
+    body, .wrapper {
+        padding: 15px;
+    }
+    .wrapper .pass-field {
+        height: 55px;
+    }
+    .pass-field input, .content p  {
+        font-size: 1.15rem;
+    }
+    .pass-field i, .requirement-list li {
+        font-size: 1.1rem;
+    }
+    .requirement-list li span {
+        margin-left: 7px;
+    }
+}
+
+/*Checkbox Toggle*/
+.form-switch .form-check-input {
+    width: 3.5em !important;
+    margin-left: -2.5em;
+    background-image: var(--bs-form-switch-bg);
+    background-position: left center;
+    border-radius: 2em;
+    transition: background-position .15s ease-in-out;
+}
+.form-check-input {
+    --bs-form-check-bg: var(--bs-body-bg);
+    flex-shrink: 0;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    margin-top: 0.25em;
+    vertical-align: top;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-form-check-bg);
+    background-image: var(--bs-form-check-bg-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    print-color-adjust: exact;
+    cursor: pointer !important;
+    transition: .4s !important;
+}
+/*Checkbox Toggle*/

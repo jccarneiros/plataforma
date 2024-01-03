@@ -1,0 +1,37 @@
+
+
+/*TITLE PAGES*/
+.with-line {
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    color: #cccccc;
+}
+.with-line::after, .with-line::before {
+    background-color: #cccccc;
+    content: '';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+}
+.with-line::before {
+    right: 2rem;
+    margin-left: -100%;
+}
+.with-line::after {
+    left: 2rem;
+    margin-right: -100%;
+}
+.with-line.left {
+    text-align: left;
+}
+.with-line.right {
+    text-align: right;
+}
+.title-page{
+    background-color: #673AB7;
+    padding: 0.5rem 2rem;
+    color: #ffffff;
+}
